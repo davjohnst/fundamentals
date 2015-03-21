@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import sys
+from sorting.base_sort import BaseSort
 
 """
 Quicksort:
@@ -33,7 +34,7 @@ Worst case performance:
   O(n^2)
 
 """
-class QuickSort(object):
+class QuickSort(BaseSort):
 
     def sort(self, nums):
         self.quicksort(nums, 0, len(nums) - 1)

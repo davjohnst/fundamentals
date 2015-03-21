@@ -25,11 +25,11 @@ Worst case performance:
  O(n log n)
 
 """
-
-
 class MergeSort(BaseSort):
+
     def sort(self, nums):
         self.merge_sort(nums, 0L, len(nums) - 1L)
+
 
     """ conquer (combine step)"""
     def merge(self, nums, p, q, r):

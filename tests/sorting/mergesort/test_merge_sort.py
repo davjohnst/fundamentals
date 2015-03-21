@@ -4,6 +4,7 @@ from unittest import TestCase
 
 from fundamentals.sorting.mergesort.merge_sort import MergeSort
 
+
 class TestMergeSort(TestCase):
 
     def test_merging(self):

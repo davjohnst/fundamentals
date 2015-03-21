@@ -2,8 +2,8 @@
 
 from math import floor
 
-class BinarySearch(object):
 
+class BinarySearch(object):
 
     def binary_search(self, nums, query):
 

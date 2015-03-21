@@ -2,6 +2,8 @@
 
 from unittest import TestCase
 
+from sorting.base_sort import BaseSort
+
 class TestBaseSort(TestCase):
     def test_base_sort(self):
         

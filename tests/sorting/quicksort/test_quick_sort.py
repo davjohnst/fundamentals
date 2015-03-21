@@ -2,7 +2,7 @@
 
 from unittest import TestCase
 
-from sorting.quicksort.quick_sort import QuickSort
+from fundamentals.sorting.quicksort.quick_sort import QuickSort
 
 class TestQuickSort(TestCase):
     def test_quick_sort(self):

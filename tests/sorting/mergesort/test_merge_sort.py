@@ -2,7 +2,7 @@
 
 from unittest import TestCase
 
-from sorting.mergesort.merge_sort import MergeSort
+from fundamentals.sorting.mergesort.merge_sort import MergeSort
 
 class TestMergeSort(TestCase):
 

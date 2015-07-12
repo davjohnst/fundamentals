@@ -58,6 +58,29 @@ class LL(object):
             current.next = new
             return head, new
 
+    def delkey(self, keyval):
+        """ Removes the first instance of keyval in the linked list, if it exists """
+
+        if self.head.value == keyval:
+            self.head = self.head.next
+            return self
+
+        current = self.head
+        while current.next:
+            if current.next.value == keyval:
+                nextnext = current.next.next
+                current.next.next = None
+                current.next = nextnext
+
+                # if nextnext is a termination
+                if not nextnext:
+                    tail = current
+
+                return self
+
+            current = current.next
+
+
 
 def main():
 

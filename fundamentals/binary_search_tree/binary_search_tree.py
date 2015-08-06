@@ -31,6 +31,18 @@ class BST(object):
             else:
                 self._put(val, current_node.right)
 
+    def contains(self, val):
+        current_node = self.root
+        while current_node is not None:
+            if current_node.value == val:
+                return True
+            elif val < current_node.value:
+                current_node = current_node.left
+            else:
+                current_node = current_node.right
+
+        return False
+
     def pre_order_traversal(self, func):
         self._pre_order_traversal(self.root, func)
 
@@ -55,7 +67,11 @@ def main():
 
     def print_val(node):
         print node.value
+
     b.pre_order_traversal(print_val)
+
+    print b.contains(1)
+    print b.contains(3)
 
 
 if __name__ == "__main__":
